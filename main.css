@@ -11,6 +11,15 @@ body {
     padding: 0 20px;
 }
 
+.container-full {
+    max-width: 3000px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Header Styles */
 
 
@@ -161,9 +170,7 @@ nav a {
     justify-content: space-between;
 }
 
-.article {
-    width: 32%;
-}
+
 
 .article img {
     width: 100%;
@@ -247,7 +254,6 @@ footer {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 20px;
     align-items: center;
     outline: none; 
 }
@@ -449,7 +455,7 @@ header {
  }    
 
  .item-background-img {
-    background-image: url('9.jpg'); /* Replace with your image path */
+    background-image: url('20.jpg'); /* Replace with your image path */
       background-size: cover; /* Adjust as needed (cover, contain, 100% 100%, etc.) */
       background-repeat: no-repeat; /* Prevent image repetition */
       width: 100%;
@@ -469,6 +475,10 @@ header {
  
       .reasons {
      flex-direction: column;
+    }
+
+    .article {
+        width: 100%;
     }
     .reason img {
         width: 100px;
@@ -495,18 +505,25 @@ header {
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     
     .text-image-item img {
         height: 80px; /* Maintain aspect ratio */
      }    
-}
+     .footer-links a {
+        font-size: 12;
+     }
+    }
 
 @media (min-width: 360px) {
     .container {
       flex-direction: column;
+    }
+
+    .article {
+        width: 100%;
     }
 
     .container nav{
@@ -534,23 +551,30 @@ header {
     }
 
     .carousel-slide img {
-        height: 720px;
+        height: 360px;
       }
       .explore h2 {
         margin-bottom: 20px;
     }
     h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .text-image-item img {
         height: 110px; /* Maintain aspect ratio */
      }    
+     .footer-links a {
+        font-size: 16;
+     }
 }
 
 @media (min-width: 540px) {
     .container {
       flex-direction: column;
+    }
+
+    .article {
+        width: 100%;
     }
 
     .container nav{
@@ -577,7 +601,7 @@ header {
         padding: 20px;
     }
     .carousel-slide img {
-        height: 720px;
+        height: 420px;
       }
       .explore h2 {
         margin-bottom: 20px;
@@ -588,6 +612,10 @@ header {
     .text-image-item img {
         height: 160px; /* Maintain aspect ratio */
      }    
+
+     .footer-links a {
+        font-size: 18;
+     }
 }
 
 @media (min-width: 720px) {
@@ -601,6 +629,10 @@ header {
  
       .reasons {
      flex-direction: column;
+    }
+
+    .article {
+        width: 100%;
     }
     .reason img {
         width: 100px;
@@ -620,7 +652,7 @@ header {
     }
 
     .carousel-slide img {
-        height: 720px;
+        height: 480px;
       }
     
       .explore h2 {
@@ -632,6 +664,10 @@ header {
     .text-image-item img {
         height: 180px; /* Maintain aspect ratio */
      }    
+
+     .footer-links a {
+        font-size: 20;
+     }
 }
 
   @media (min-width: 961px) {
@@ -641,6 +677,10 @@ header {
 
     .reasons {
         flex-direction: row;
+    }
+
+    .article {
+        width: 32%;
     }
 
     .reason img {
@@ -668,5 +708,9 @@ h2 {
 }
 .text-image-item img {
     height: 300px; /* Maintain aspect ratio */
- }    
+ } 
+ 
+ .footer-links a {
+    font-size: 20;
+ }
   }
