@@ -37,4 +37,30 @@ $(document).ready(function() {
       slideIndex++;
       showSlide(slideIndex);
     }, 3000); // Change 3000 (milliseconds) to adjust the interval
+
+
+    /*Events Slider*/
+
+    const slider = document.getElementById('videoSlider');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let slideEventIndex = 0;
+
+    function showSlides() {
+        slider.style.transform = `translateX(${-slideEventIndex * 100}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      slideEventIndex = (slideIndex - 1 + slider.children.length) % slider.children.length;
+        showSlides();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      slideEventIndex = (slideEventIndex + 1) % slider.children.length;
+        showSlides();
+    });
+
+    showSlides();
+
+
   });
