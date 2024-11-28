@@ -677,7 +677,7 @@ header {
         padding: 5px;
     }
     .carousel-slide img {
-        height: 200px;
+        height: 300px;
       }
     
       .explore h2 {
@@ -728,7 +728,7 @@ header {
     }
 
     .carousel-slide img {
-        height: 320px;
+        height: 420px;
       }
       .explore h2 {
         margin-bottom: 20px;
@@ -774,7 +774,7 @@ header {
         padding: 20px;
     }
     .carousel-slide img {
-        height: 360px;
+        height: 460px;
       }
       .explore h2 {
         margin-bottom: 20px;
@@ -821,7 +821,7 @@ header {
     }
 
     .carousel-slide img {
-        height: 440px;
+        height: 540px;
       }
     
       .explore h2 {
@@ -868,7 +868,7 @@ header {
     padding: 20px;
 }
 .carousel-slide img {
-    height: 660px;
+    height: 760px;
   }
   .explore h2 {
     margin-bottom: 20px;
